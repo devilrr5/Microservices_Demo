@@ -1,0 +1,13 @@
+server:
+  port: 9093
+
+spring:
+  application:
+    name: 07_Cloud_Config_Server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/devilrr5/Microservices_configuration_properties
+          clone-on-start: true
